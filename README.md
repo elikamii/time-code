@@ -16,12 +16,6 @@ def fetch_and_save_posts(filename='posts.csv'):
         
         # Parse the JSON response
         posts_data = response.json()
-        
-        # Open a CSV file in write mode
-        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            # Create a CSV writer object
-            fieldnames = ['id', 'title', 'body']
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
             # Write the header row
             writer.writeheader()
