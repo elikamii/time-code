@@ -25,7 +25,7 @@ def fetch_and_save_posts(filename='posts.csv'):
                 writer.writerow({
                     'id': post.get('id'),
                     'title': post.get('title'),
-                    'body': post.get('body')
+                    
                 })
         
         print(f"Successfully fetched {len(posts_data)} posts and saved them to {filename}")
